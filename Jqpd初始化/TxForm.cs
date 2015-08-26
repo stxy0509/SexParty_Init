@@ -213,17 +213,13 @@ namespace JqpdInit
             Button b = (Button)sender;
             int s = int.Parse(b.Text);
             s = (s + 1) % 10;
-            if(b.Name.EndsWith("1"))
+            for(int i = 1; i <= 3;i++ )
             {
-                Program.ln[0] = s;
-            }
-            else if(b.Name.EndsWith("2"))
-            {
-                Program.ln[1] = s;
-            }
-            else if(b.Name.EndsWith("3"))
-            {
-                Program.ln[2] = s;
+                if(b.Name.EndsWith(i.ToString()))
+                {
+                    Program.ln[i - 1] = s;
+                    break;
+                }
             }
             Program.lineNumber = Program.ln[0] * 100 + Program.ln[1] * 10 + Program.ln[2];
             b.Text = s.ToString();
@@ -237,7 +233,7 @@ namespace JqpdInit
             s = (s + 1) % 10;
             for(i = 0; i < Program.mn.Length; i++)
             {
-                if(b.Name.EndsWith("" + (i + 1)))
+                if(b.Name.EndsWith((i + 1).ToString()))
                 {
                     Program.mn[i] = s;
                     break;
