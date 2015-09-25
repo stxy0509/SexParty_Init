@@ -116,11 +116,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Settings.cs" />
-    <Compile Include="TxForm.cs">
+    <Compile Include="InitForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TxForm.Designer.cs">
-      <DependentUpon>TxForm.cs</DependentUpon>
+    <Compile Include="InitForm.Designer.cs">
+      <DependentUpon>InitForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DbViewForm.cs">
       <SubType>Form</SubType>
@@ -130,8 +130,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="TxForm.resx">
-      <DependentUpon>TxForm.cs</DependentUpon>
+    <EmbeddedResource Include="InitForm.resx">
+      <DependentUpon>InitForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DbViewForm.resx">
       <DependentUpon>DbViewForm.cs</DependentUpon>
@@ -167,7 +167,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

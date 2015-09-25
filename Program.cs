@@ -13,7 +13,7 @@ namespace JqpdInit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            TX_Form f = new TX_Form();
+            Init_Form f = new Init_Form();
             Application.Run(f);
         }
     }

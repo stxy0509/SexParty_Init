@@ -5,6 +5,9 @@ namespace JqpdInit
 {
     public partial class DbViewForm : Form
     {
+        private int startPos = 0;
+        private int totalSize = 0;
+        private const int itemsPerPage = 20;
         public DbViewForm()
         {
             InitializeComponent();
@@ -18,26 +21,32 @@ namespace JqpdInit
             //添加表头（列）
             dataTable.Columns.Add("序号",      60, HorizontalAlignment.Center);
             dataTable.Columns.Add("时间",     200, HorizontalAlignment.Center);
-            dataTable.Columns.Add("线号",      80, HorizontalAlignment.Center);
-            dataTable.Columns.Add("机台号码", 140, HorizontalAlignment.Center);
+            dataTable.Columns.Add("线号",      60, HorizontalAlignment.Center);
+            dataTable.Columns.Add("机台号码", 100, HorizontalAlignment.Center);
 
-            int i = 0;
-            SQLiteDataReader reader;
-            SQLiteCommand command = TX_Form.dataBase.CreateCommand();
-            command.CommandText = "select * from jqpd;";
-            try
-            {            
-                 reader = command.ExecuteReader();
-            }
-            catch(SQLiteException sqlex)
+            totalSize = GetRecordSize();
+            if (totalSize > 0)
             {
-                command.CommandText = "create table jqpd(time text,ln int,mn int);";
-                command.ExecuteNonQuery();
+                DisplayItems();
+            } 
+        }
 
-                command.CommandText = "select * from jqpd;";
+        private void DisplayItems()
+        {
+            int i = startPos;
+            SQLiteDataReader reader;
+            dataTable.Items.Clear();
+            SQLiteCommand command = Init_Form.dataBase.CreateCommand();
+            command.CommandText = "select * from jqpd limit " + startPos + "," + itemsPerPage + ";";
+            try
+            {
                 reader = command.ExecuteReader();
-            }   
-            while(reader.Read())
+            }
+            catch (SQLiteException sqlex)
+            {
+                return;
+            }
+            while (reader.Read())
             {
                 ListViewItem item = new ListViewItem();
                 item.SubItems.Clear();
@@ -49,10 +58,92 @@ namespace JqpdInit
                 ++i;
             }
         }
-
-        private void DataTable_SelectedIndexChanged(object sender, EventArgs e)
+        private int GetRecordSize()
         {
+            int size = 0;
+            SQLiteDataReader reader;
+            SQLiteCommand command = Init_Form.dataBase.CreateCommand();
+            command.CommandText = "select count(*) from jqpd;";
+            try
+            {
+                reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    size = reader.GetInt32(0);
+                }
+            }
+            catch (SQLiteException sqlex)
+            {
+                command.CommandText = "create table jqpd(time text,ln int,mn int);";
+                command.ExecuteNonQuery();
+            }
+            return size;
+        }
 
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            if (totalSize == 0)
+            {
+                return;
+            }
+            DialogResult res = MessageBox.Show("确定要清除打码记录吗?", "确认删除", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+            {
+                SQLiteCommand command = Init_Form.dataBase.CreateCommand();
+                command.CommandText = "delete from jqpd where 1;";
+                try
+                {
+                    command.ExecuteNonQuery();
+                    dataTable.Items.Clear();
+                }
+                catch (SQLiteException sqlex)
+                {
+
+                }
+            }
+            else if (res == DialogResult.No)
+            {
+                return;
+            }
+        }
+
+        private void prevPage_Click(object sender, EventArgs e)
+        {
+            if (startPos < itemsPerPage)
+            {
+                return;
+            }
+            startPos -= itemsPerPage;
+            DisplayItems();
+        }
+
+        private void nextPage_Click(object sender, EventArgs e)
+        {
+            if (totalSize <= startPos + itemsPerPage)
+            {
+                return;
+            }
+            startPos += itemsPerPage;
+            DisplayItems();
+        }
+
+        private void firstPage_Click(object sender, EventArgs e)
+        {
+            if (totalSize > 0)
+            {
+                startPos = 0;
+                DisplayItems();
+            }
+        }
+
+        private void lastPage_Click(object sender, EventArgs e)
+        {
+            if (totalSize > 0)
+            {
+                int r = totalSize % itemsPerPage;
+                startPos = (r == 0 ? totalSize - itemsPerPage : totalSize / itemsPerPage * itemsPerPage);
+                DisplayItems();
+            }
         }
     }
 }

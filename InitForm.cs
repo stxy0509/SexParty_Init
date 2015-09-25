@@ -4,7 +4,7 @@ using System.IO.Ports;
 using System.Data.SQLite;
 namespace JqpdInit
 {
-    public partial class TX_Form : Form
+    public partial class Init_Form : Form
     {
         const int bitRate = 57600;
         const int maxNum = 99999;
@@ -58,7 +58,6 @@ namespace JqpdInit
             }
             catch(System.Exception excep)
             {
-
             }
             sp.Close();
             sp.Dispose();
@@ -90,7 +89,7 @@ namespace JqpdInit
             mn3Button.Text = mn[2].ToString();
         }
 
-        public TX_Form()
+        public Init_Form()
         {
             InitializeComponent();
             LoadSavedValue();
@@ -171,7 +170,7 @@ namespace JqpdInit
                 if(!SaveData())
                 {
                     portSelect = false;
-                    MessageBox.Show("保存失败！");
+                    MessageBox.Show("写入失败！");
                 }
                 else
                 {
@@ -193,7 +192,7 @@ namespace JqpdInit
             userSet.savedCurrent = currentNum;
             userSet.Save();
             currentNumLabel.Text = currentNum.ToString();
-            MessageBox.Show("保存成功!");
+            MessageBox.Show("写入成功!");
         }
 
         private void SaleTypeButton_Click(object sender, EventArgs e)

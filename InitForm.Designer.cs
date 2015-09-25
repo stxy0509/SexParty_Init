@@ -1,6 +1,6 @@
 ﻿namespace JqpdInit
 {
-    partial class TX_Form
+    partial class Init_Form
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -32,7 +32,7 @@
             this.timeLabel = new System.Windows.Forms.Label();
             this.lineNumLabel = new System.Windows.Forms.Label();
             this.machineNumLabel = new System.Windows.Forms.Label();
-            this.saveButton = new System.Windows.Forms.Button();
+            this.writeButton = new System.Windows.Forms.Button();
             this.typeButton = new System.Windows.Forms.Button();
             this.ln1Button = new System.Windows.Forms.Button();
             this.mn1Button = new System.Windows.Forms.Button();
@@ -52,7 +52,7 @@
             // typeLabel
             // 
             this.typeLabel.AutoSize = true;
-            this.typeLabel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.typeLabel.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.typeLabel.Location = new System.Drawing.Point(21, 33);
             this.typeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.typeLabel.Name = "typeLabel";
@@ -63,7 +63,7 @@
             // timeLabel
             // 
             this.timeLabel.AutoSize = true;
-            this.timeLabel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.timeLabel.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.timeLabel.Location = new System.Drawing.Point(21, 94);
             this.timeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.timeLabel.Name = "timeLabel";
@@ -74,7 +74,7 @@
             // lineNumLabel
             // 
             this.lineNumLabel.AutoSize = true;
-            this.lineNumLabel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lineNumLabel.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lineNumLabel.Location = new System.Drawing.Point(50, 156);
             this.lineNumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lineNumLabel.Name = "lineNumLabel";
@@ -85,7 +85,7 @@
             // machineNumLabel
             // 
             this.machineNumLabel.AutoSize = true;
-            this.machineNumLabel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.machineNumLabel.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.machineNumLabel.Location = new System.Drawing.Point(18, 212);
             this.machineNumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.machineNumLabel.Name = "machineNumLabel";
@@ -93,22 +93,22 @@
             this.machineNumLabel.TabIndex = 2;
             this.machineNumLabel.Text = "机台号码";
             // 
-            // saveButton
+            // writeButton
             // 
-            this.saveButton.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.saveButton.ForeColor = System.Drawing.Color.Blue;
-            this.saveButton.Location = new System.Drawing.Point(107, 253);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(4);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(140, 64);
-            this.saveButton.TabIndex = 4;
-            this.saveButton.Text = "保存";
-            this.saveButton.UseVisualStyleBackColor = true;
-            this.saveButton.Click += new System.EventHandler(this.SaveButton_Click);
+            this.writeButton.Font = new System.Drawing.Font("SimSun", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.writeButton.ForeColor = System.Drawing.Color.Blue;
+            this.writeButton.Location = new System.Drawing.Point(107, 253);
+            this.writeButton.Margin = new System.Windows.Forms.Padding(4);
+            this.writeButton.Name = "writeButton";
+            this.writeButton.Size = new System.Drawing.Size(140, 64);
+            this.writeButton.TabIndex = 4;
+            this.writeButton.Text = "写入数据";
+            this.writeButton.UseVisualStyleBackColor = true;
+            this.writeButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // typeButton
             // 
-            this.typeButton.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.typeButton.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.typeButton.Location = new System.Drawing.Point(107, 15);
             this.typeButton.Margin = new System.Windows.Forms.Padding(4);
             this.typeButton.Name = "typeButton";
@@ -120,7 +120,7 @@
             // 
             // ln1Button
             // 
-            this.ln1Button.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ln1Button.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ln1Button.Location = new System.Drawing.Point(108, 144);
             this.ln1Button.Margin = new System.Windows.Forms.Padding(4);
             this.ln1Button.Name = "ln1Button";
@@ -132,7 +132,7 @@
             // 
             // mn1Button
             // 
-            this.mn1Button.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mn1Button.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.mn1Button.Location = new System.Drawing.Point(107, 201);
             this.mn1Button.Margin = new System.Windows.Forms.Padding(4);
             this.mn1Button.Name = "mn1Button";
@@ -144,7 +144,7 @@
             // 
             // ln2Button
             // 
-            this.ln2Button.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ln2Button.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ln2Button.Location = new System.Drawing.Point(164, 143);
             this.ln2Button.Margin = new System.Windows.Forms.Padding(4);
             this.ln2Button.Name = "ln2Button";
@@ -156,7 +156,7 @@
             // 
             // ln3Button
             // 
-            this.ln3Button.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ln3Button.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ln3Button.Location = new System.Drawing.Point(221, 143);
             this.ln3Button.Margin = new System.Windows.Forms.Padding(4);
             this.ln3Button.Name = "ln3Button";
@@ -168,7 +168,7 @@
             // 
             // mn2Button
             // 
-            this.mn2Button.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mn2Button.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.mn2Button.Location = new System.Drawing.Point(164, 199);
             this.mn2Button.Margin = new System.Windows.Forms.Padding(4);
             this.mn2Button.Name = "mn2Button";
@@ -180,7 +180,7 @@
             // 
             // mn3Button
             // 
-            this.mn3Button.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mn3Button.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.mn3Button.Location = new System.Drawing.Point(221, 199);
             this.mn3Button.Margin = new System.Windows.Forms.Padding(4);
             this.mn3Button.Name = "mn3Button";
@@ -221,7 +221,7 @@
             // currentNumLabel
             // 
             this.currentNumLabel.AutoSize = true;
-            this.currentNumLabel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.currentNumLabel.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.currentNumLabel.Location = new System.Drawing.Point(383, 93);
             this.currentNumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.currentNumLabel.Name = "currentNumLabel";
@@ -232,7 +232,7 @@
             // startNumLabel
             // 
             this.startNumLabel.AutoSize = true;
-            this.startNumLabel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.startNumLabel.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.startNumLabel.Location = new System.Drawing.Point(295, 33);
             this.startNumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.startNumLabel.Name = "startNumLabel";
@@ -243,7 +243,7 @@
             // currentLabel
             // 
             this.currentLabel.AutoSize = true;
-            this.currentLabel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.currentLabel.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.currentLabel.Location = new System.Drawing.Point(295, 94);
             this.currentLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.currentLabel.Name = "currentLabel";
@@ -288,7 +288,7 @@
             this.Controls.Add(this.ln2Button);
             this.Controls.Add(this.ln1Button);
             this.Controls.Add(this.typeButton);
-            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.writeButton);
             this.Controls.Add(this.currentNumLabel);
             this.Controls.Add(this.currentLabel);
             this.Controls.Add(this.startNumLabel);
@@ -296,7 +296,7 @@
             this.Controls.Add(this.lineNumLabel);
             this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.typeLabel);
-            this.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TX_Form";
             this.Text = "激情派对初始化";
@@ -313,7 +313,7 @@
         private System.Windows.Forms.Label timeLabel;
         private System.Windows.Forms.Label lineNumLabel;
         private System.Windows.Forms.Label machineNumLabel;
-        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button writeButton;
         private System.Windows.Forms.Button typeButton;
         private System.Windows.Forms.Button ln1Button;
         private System.Windows.Forms.Button mn1Button;
