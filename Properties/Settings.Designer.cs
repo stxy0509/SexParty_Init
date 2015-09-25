@@ -22,5 +22,53 @@ namespace JqpdInit.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("999")]
+        public int savedLineNum {
+            get {
+                return ((int)(this["savedLineNum"]));
+            }
+            set {
+                this["savedLineNum"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("999")]
+        public int savedMachineNum {
+            get {
+                return ((int)(this["savedMachineNum"]));
+            }
+            set {
+                this["savedMachineNum"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int savedStart {
+            get {
+                return ((int)(this["savedStart"]));
+            }
+            set {
+                this["savedStart"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int savedCurrent {
+            get {
+                return ((int)(this["savedCurrent"]));
+            }
+            set {
+                this["savedCurrent"] = value;
+            }
+        }
     }
 }

@@ -28,247 +28,248 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.type = new System.Windows.Forms.Label();
-            this.time = new System.Windows.Forms.Label();
-            this.lineNum = new System.Windows.Forms.Label();
-            this.machineNum = new System.Windows.Forms.Label();
-            this.save = new System.Windows.Forms.Button();
-            this.typeStr = new System.Windows.Forms.Button();
-            this.t = new System.Windows.Forms.Button();
-            this.ln1 = new System.Windows.Forms.Button();
-            this.mn1 = new System.Windows.Forms.Button();
-            this.ln2 = new System.Windows.Forms.Button();
-            this.ln3 = new System.Windows.Forms.Button();
-            this.mn2 = new System.Windows.Forms.Button();
-            this.mn3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Num_Start = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.Num_Current = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.typeLabel = new System.Windows.Forms.Label();
+            this.timeLabel = new System.Windows.Forms.Label();
+            this.lineNumLabel = new System.Windows.Forms.Label();
+            this.machineNumLabel = new System.Windows.Forms.Label();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.typeButton = new System.Windows.Forms.Button();
+            this.ln1Button = new System.Windows.Forms.Button();
+            this.mn1Button = new System.Windows.Forms.Button();
+            this.ln2Button = new System.Windows.Forms.Button();
+            this.ln3Button = new System.Windows.Forms.Button();
+            this.mn2Button = new System.Windows.Forms.Button();
+            this.mn3Button = new System.Windows.Forms.Button();
+            this.viewButton = new System.Windows.Forms.Button();
+            this.startNumTB = new System.Windows.Forms.TextBox();
+            this.decButton = new System.Windows.Forms.Button();
+            this.currentNumLabel = new System.Windows.Forms.Label();
+            this.startNumLabel = new System.Windows.Forms.Label();
+            this.currentLabel = new System.Windows.Forms.Label();
+            this.timeList = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // type
+            // typeLabel
             // 
-            this.type.AutoSize = true;
-            this.type.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.type.Location = new System.Drawing.Point(21, 33);
-            this.type.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.type.Name = "type";
-            this.type.Size = new System.Drawing.Size(72, 16);
-            this.type.TabIndex = 2;
-            this.type.Text = "产品类别";
-            this.type.Click += new System.EventHandler(this.AllLabels_Click);
+            this.typeLabel.AutoSize = true;
+            this.typeLabel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.typeLabel.Location = new System.Drawing.Point(21, 33);
+            this.typeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.typeLabel.Name = "typeLabel";
+            this.typeLabel.Size = new System.Drawing.Size(72, 16);
+            this.typeLabel.TabIndex = 2;
+            this.typeLabel.Text = "产品类别";
             // 
-            // time
+            // timeLabel
             // 
-            this.time.AutoSize = true;
-            this.time.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.time.Location = new System.Drawing.Point(21, 94);
-            this.time.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.time.Name = "time";
-            this.time.Size = new System.Drawing.Size(72, 16);
-            this.time.TabIndex = 2;
-            this.time.Text = "打码时间";
-            this.time.Click += new System.EventHandler(this.AllLabels_Click);
+            this.timeLabel.AutoSize = true;
+            this.timeLabel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.timeLabel.Location = new System.Drawing.Point(21, 94);
+            this.timeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.timeLabel.Name = "timeLabel";
+            this.timeLabel.Size = new System.Drawing.Size(72, 16);
+            this.timeLabel.TabIndex = 2;
+            this.timeLabel.Text = "打码时间";
             // 
-            // lineNum
+            // lineNumLabel
             // 
-            this.lineNum.AutoSize = true;
-            this.lineNum.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lineNum.Location = new System.Drawing.Point(50, 156);
-            this.lineNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lineNum.Name = "lineNum";
-            this.lineNum.Size = new System.Drawing.Size(40, 16);
-            this.lineNum.TabIndex = 2;
-            this.lineNum.Text = "线号";
-            this.lineNum.Click += new System.EventHandler(this.AllLabels_Click);
+            this.lineNumLabel.AutoSize = true;
+            this.lineNumLabel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lineNumLabel.Location = new System.Drawing.Point(50, 156);
+            this.lineNumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lineNumLabel.Name = "lineNumLabel";
+            this.lineNumLabel.Size = new System.Drawing.Size(40, 16);
+            this.lineNumLabel.TabIndex = 2;
+            this.lineNumLabel.Text = "线号";
             // 
-            // machineNum
+            // machineNumLabel
             // 
-            this.machineNum.AutoSize = true;
-            this.machineNum.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.machineNum.Location = new System.Drawing.Point(18, 212);
-            this.machineNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.machineNum.Name = "machineNum";
-            this.machineNum.Size = new System.Drawing.Size(72, 16);
-            this.machineNum.TabIndex = 2;
-            this.machineNum.Text = "机台号码";
-            this.machineNum.Click += new System.EventHandler(this.AllLabels_Click);
+            this.machineNumLabel.AutoSize = true;
+            this.machineNumLabel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.machineNumLabel.Location = new System.Drawing.Point(18, 212);
+            this.machineNumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.machineNumLabel.Name = "machineNumLabel";
+            this.machineNumLabel.Size = new System.Drawing.Size(72, 16);
+            this.machineNumLabel.TabIndex = 2;
+            this.machineNumLabel.Text = "机台号码";
             // 
-            // save
+            // saveButton
             // 
-            this.save.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.save.ForeColor = System.Drawing.Color.Blue;
-            this.save.Location = new System.Drawing.Point(107, 253);
-            this.save.Margin = new System.Windows.Forms.Padding(4);
-            this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(140, 64);
-            this.save.TabIndex = 4;
-            this.save.Text = "保存";
-            this.save.UseVisualStyleBackColor = true;
-            this.save.Click += new System.EventHandler(this.SaveButton_Click);
+            this.saveButton.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.saveButton.ForeColor = System.Drawing.Color.Blue;
+            this.saveButton.Location = new System.Drawing.Point(107, 253);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(4);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(140, 64);
+            this.saveButton.TabIndex = 4;
+            this.saveButton.Text = "保存";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
-            // typeStr
+            // typeButton
             // 
-            this.typeStr.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.typeStr.Location = new System.Drawing.Point(107, 15);
-            this.typeStr.Margin = new System.Windows.Forms.Padding(4);
-            this.typeStr.Name = "typeStr";
-            this.typeStr.Size = new System.Drawing.Size(120, 53);
-            this.typeStr.TabIndex = 6;
-            this.typeStr.Text = "公司台";
-            this.typeStr.UseVisualStyleBackColor = true;
-            this.typeStr.Click += new System.EventHandler(this.SaleTypeButton_Click);
+            this.typeButton.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.typeButton.Location = new System.Drawing.Point(107, 15);
+            this.typeButton.Margin = new System.Windows.Forms.Padding(4);
+            this.typeButton.Name = "typeButton";
+            this.typeButton.Size = new System.Drawing.Size(120, 53);
+            this.typeButton.TabIndex = 6;
+            this.typeButton.Text = "公司台";
+            this.typeButton.UseVisualStyleBackColor = true;
+            this.typeButton.Click += new System.EventHandler(this.SaleTypeButton_Click);
             // 
-            // t
+            // ln1Button
             // 
-            this.t.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.t.Location = new System.Drawing.Point(108, 82);
-            this.t.Margin = new System.Windows.Forms.Padding(4);
-            this.t.Name = "t";
-            this.t.Size = new System.Drawing.Size(120, 41);
-            this.t.TabIndex = 7;
-            this.t.Text = "20小时";
-            this.t.UseVisualStyleBackColor = true;
-            this.t.Click += new System.EventHandler(this.CodeTimeButton_Click);
+            this.ln1Button.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ln1Button.Location = new System.Drawing.Point(108, 144);
+            this.ln1Button.Margin = new System.Windows.Forms.Padding(4);
+            this.ln1Button.Name = "ln1Button";
+            this.ln1Button.Size = new System.Drawing.Size(43, 43);
+            this.ln1Button.TabIndex = 8;
+            this.ln1Button.Text = "1";
+            this.ln1Button.UseVisualStyleBackColor = true;
+            this.ln1Button.Click += new System.EventHandler(this.LineNumButton_Click);
             // 
-            // ln1
+            // mn1Button
             // 
-            this.ln1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ln1.Location = new System.Drawing.Point(108, 144);
-            this.ln1.Margin = new System.Windows.Forms.Padding(4);
-            this.ln1.Name = "ln1";
-            this.ln1.Size = new System.Drawing.Size(43, 43);
-            this.ln1.TabIndex = 8;
-            this.ln1.Text = "1";
-            this.ln1.UseVisualStyleBackColor = true;
-            this.ln1.Click += new System.EventHandler(this.LineNumButton_Click);
+            this.mn1Button.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mn1Button.Location = new System.Drawing.Point(107, 201);
+            this.mn1Button.Margin = new System.Windows.Forms.Padding(4);
+            this.mn1Button.Name = "mn1Button";
+            this.mn1Button.Size = new System.Drawing.Size(43, 43);
+            this.mn1Button.TabIndex = 11;
+            this.mn1Button.Text = "1";
+            this.mn1Button.UseVisualStyleBackColor = true;
+            this.mn1Button.Click += new System.EventHandler(this.MachineNumButton_Click);
             // 
-            // mn1
+            // ln2Button
             // 
-            this.mn1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.mn1.Location = new System.Drawing.Point(107, 201);
-            this.mn1.Margin = new System.Windows.Forms.Padding(4);
-            this.mn1.Name = "mn1";
-            this.mn1.Size = new System.Drawing.Size(43, 43);
-            this.mn1.TabIndex = 11;
-            this.mn1.Text = "1";
-            this.mn1.UseVisualStyleBackColor = true;
-            this.mn1.Click += new System.EventHandler(this.MachineNumButton_Click);
+            this.ln2Button.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ln2Button.Location = new System.Drawing.Point(164, 143);
+            this.ln2Button.Margin = new System.Windows.Forms.Padding(4);
+            this.ln2Button.Name = "ln2Button";
+            this.ln2Button.Size = new System.Drawing.Size(43, 43);
+            this.ln2Button.TabIndex = 8;
+            this.ln2Button.Text = "0";
+            this.ln2Button.UseVisualStyleBackColor = true;
+            this.ln2Button.Click += new System.EventHandler(this.LineNumButton_Click);
             // 
-            // ln2
+            // ln3Button
             // 
-            this.ln2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ln2.Location = new System.Drawing.Point(164, 143);
-            this.ln2.Margin = new System.Windows.Forms.Padding(4);
-            this.ln2.Name = "ln2";
-            this.ln2.Size = new System.Drawing.Size(43, 43);
-            this.ln2.TabIndex = 8;
-            this.ln2.Text = "0";
-            this.ln2.UseVisualStyleBackColor = true;
-            this.ln2.Click += new System.EventHandler(this.LineNumButton_Click);
+            this.ln3Button.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ln3Button.Location = new System.Drawing.Point(221, 143);
+            this.ln3Button.Margin = new System.Windows.Forms.Padding(4);
+            this.ln3Button.Name = "ln3Button";
+            this.ln3Button.Size = new System.Drawing.Size(43, 43);
+            this.ln3Button.TabIndex = 8;
+            this.ln3Button.Text = "0";
+            this.ln3Button.UseVisualStyleBackColor = true;
+            this.ln3Button.Click += new System.EventHandler(this.LineNumButton_Click);
             // 
-            // ln3
+            // mn2Button
             // 
-            this.ln3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ln3.Location = new System.Drawing.Point(221, 143);
-            this.ln3.Margin = new System.Windows.Forms.Padding(4);
-            this.ln3.Name = "ln3";
-            this.ln3.Size = new System.Drawing.Size(43, 43);
-            this.ln3.TabIndex = 8;
-            this.ln3.Text = "0";
-            this.ln3.UseVisualStyleBackColor = true;
-            this.ln3.Click += new System.EventHandler(this.LineNumButton_Click);
+            this.mn2Button.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mn2Button.Location = new System.Drawing.Point(164, 199);
+            this.mn2Button.Margin = new System.Windows.Forms.Padding(4);
+            this.mn2Button.Name = "mn2Button";
+            this.mn2Button.Size = new System.Drawing.Size(43, 43);
+            this.mn2Button.TabIndex = 11;
+            this.mn2Button.Text = "2";
+            this.mn2Button.UseVisualStyleBackColor = true;
+            this.mn2Button.Click += new System.EventHandler(this.MachineNumButton_Click);
             // 
-            // mn2
+            // mn3Button
             // 
-            this.mn2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.mn2.Location = new System.Drawing.Point(164, 199);
-            this.mn2.Margin = new System.Windows.Forms.Padding(4);
-            this.mn2.Name = "mn2";
-            this.mn2.Size = new System.Drawing.Size(43, 43);
-            this.mn2.TabIndex = 11;
-            this.mn2.Text = "2";
-            this.mn2.UseVisualStyleBackColor = true;
-            this.mn2.Click += new System.EventHandler(this.MachineNumButton_Click);
+            this.mn3Button.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mn3Button.Location = new System.Drawing.Point(221, 199);
+            this.mn3Button.Margin = new System.Windows.Forms.Padding(4);
+            this.mn3Button.Name = "mn3Button";
+            this.mn3Button.Size = new System.Drawing.Size(43, 43);
+            this.mn3Button.TabIndex = 11;
+            this.mn3Button.Text = " 3";
+            this.mn3Button.UseVisualStyleBackColor = true;
+            this.mn3Button.Click += new System.EventHandler(this.MachineNumButton_Click);
             // 
-            // mn3
+            // viewButton
             // 
-            this.mn3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.mn3.Location = new System.Drawing.Point(221, 199);
-            this.mn3.Margin = new System.Windows.Forms.Padding(4);
-            this.mn3.Name = "mn3";
-            this.mn3.Size = new System.Drawing.Size(43, 43);
-            this.mn3.TabIndex = 11;
-            this.mn3.Text = " 3";
-            this.mn3.UseVisualStyleBackColor = true;
-            this.mn3.Click += new System.EventHandler(this.MachineNumButton_Click);
+            this.viewButton.Location = new System.Drawing.Point(298, 253);
+            this.viewButton.Name = "viewButton";
+            this.viewButton.Size = new System.Drawing.Size(129, 64);
+            this.viewButton.TabIndex = 12;
+            this.viewButton.Text = "查看记录";
+            this.viewButton.UseVisualStyleBackColor = true;
+            this.viewButton.Click += new System.EventHandler(this.DbViewButton_Click);
             // 
-            // button1
+            // startNumTB
             // 
-            this.button1.Location = new System.Drawing.Point(298, 253);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 64);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "查看记录";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.DbViewButton_Click);
+            this.startNumTB.Location = new System.Drawing.Point(386, 30);
+            this.startNumTB.Name = "startNumTB";
+            this.startNumTB.Size = new System.Drawing.Size(100, 26);
+            this.startNumTB.TabIndex = 14;
+            this.startNumTB.TextChanged += new System.EventHandler(this.StartNum_TextChanged);
             // 
-            // Num_Start
+            // decButton
             // 
-            this.Num_Start.Location = new System.Drawing.Point(386, 30);
-            this.Num_Start.Name = "Num_Start";
-            this.Num_Start.Size = new System.Drawing.Size(100, 26);
-            this.Num_Start.TabIndex = 14;
-            this.Num_Start.TextChanged += new System.EventHandler(this.StartNum_TextChanged);
+            this.decButton.Location = new System.Drawing.Point(484, 82);
+            this.decButton.Name = "decButton";
+            this.decButton.Size = new System.Drawing.Size(61, 39);
+            this.decButton.TabIndex = 17;
+            this.decButton.Text = "减一";
+            this.decButton.UseVisualStyleBackColor = true;
+            this.decButton.Click += new System.EventHandler(this.MinusOneButton_Click);
             // 
-            // button2
+            // currentNumLabel
             // 
-            this.button2.Location = new System.Drawing.Point(484, 82);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(61, 39);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "减一";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.MinusOneButton_Click);
+            this.currentNumLabel.AutoSize = true;
+            this.currentNumLabel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.currentNumLabel.Location = new System.Drawing.Point(383, 93);
+            this.currentNumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.currentNumLabel.Name = "currentNumLabel";
+            this.currentNumLabel.Size = new System.Drawing.Size(16, 16);
+            this.currentNumLabel.TabIndex = 2;
+            this.currentNumLabel.Text = "0";
             // 
-            // Num_Current
+            // startNumLabel
             // 
-            this.Num_Current.AutoSize = true;
-            this.Num_Current.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Num_Current.Location = new System.Drawing.Point(383, 93);
-            this.Num_Current.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Num_Current.Name = "Num_Current";
-            this.Num_Current.Size = new System.Drawing.Size(16, 16);
-            this.Num_Current.TabIndex = 2;
-            this.Num_Current.Text = "0";
-            this.Num_Current.Click += new System.EventHandler(this.AllLabels_Click);
+            this.startNumLabel.AutoSize = true;
+            this.startNumLabel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.startNumLabel.Location = new System.Drawing.Point(295, 33);
+            this.startNumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.startNumLabel.Name = "startNumLabel";
+            this.startNumLabel.Size = new System.Drawing.Size(72, 16);
+            this.startNumLabel.TabIndex = 2;
+            this.startNumLabel.Text = "起始号码";
             // 
-            // label1
+            // currentLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(295, 33);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "起始号码";
-            this.label1.Click += new System.EventHandler(this.AllLabels_Click);
+            this.currentLabel.AutoSize = true;
+            this.currentLabel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.currentLabel.Location = new System.Drawing.Point(295, 94);
+            this.currentLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.currentLabel.Name = "currentLabel";
+            this.currentLabel.Size = new System.Drawing.Size(72, 16);
+            this.currentLabel.TabIndex = 2;
+            this.currentLabel.Text = "当前号码";
             // 
-            // label2
+            // timeList
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(295, 94);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "当前号码";
-            this.label2.Click += new System.EventHandler(this.AllLabels_Click);
+            this.timeList.FormattingEnabled = true;
+            this.timeList.Items.AddRange(new object[] {
+            "20小时",
+            "30小时",
+            "40小时",
+            "50小时",
+            "60小时",
+            "80小时",
+            "100小时",
+            "120小时",
+            "150小时",
+            "180小时"});
+            this.timeList.Location = new System.Drawing.Point(107, 91);
+            this.timeList.Name = "timeList";
+            this.timeList.Size = new System.Drawing.Size(121, 24);
+            this.timeList.TabIndex = 18;
+            this.timeList.SelectedIndexChanged += new System.EventHandler(this.TimeList_SelectedIndexChanged);
             // 
             // TX_Form
             // 
@@ -276,25 +277,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(557, 373);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.Num_Start);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.mn2);
-            this.Controls.Add(this.mn3);
-            this.Controls.Add(this.mn1);
-            this.Controls.Add(this.ln3);
-            this.Controls.Add(this.ln2);
-            this.Controls.Add(this.ln1);
-            this.Controls.Add(this.t);
-            this.Controls.Add(this.typeStr);
-            this.Controls.Add(this.save);
-            this.Controls.Add(this.Num_Current);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.machineNum);
-            this.Controls.Add(this.lineNum);
-            this.Controls.Add(this.time);
-            this.Controls.Add(this.type);
+            this.Controls.Add(this.timeList);
+            this.Controls.Add(this.decButton);
+            this.Controls.Add(this.startNumTB);
+            this.Controls.Add(this.viewButton);
+            this.Controls.Add(this.mn2Button);
+            this.Controls.Add(this.mn3Button);
+            this.Controls.Add(this.mn1Button);
+            this.Controls.Add(this.ln3Button);
+            this.Controls.Add(this.ln2Button);
+            this.Controls.Add(this.ln1Button);
+            this.Controls.Add(this.typeButton);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.currentNumLabel);
+            this.Controls.Add(this.currentLabel);
+            this.Controls.Add(this.startNumLabel);
+            this.Controls.Add(this.machineNumLabel);
+            this.Controls.Add(this.lineNumLabel);
+            this.Controls.Add(this.timeLabel);
+            this.Controls.Add(this.typeLabel);
             this.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TX_Form";
@@ -308,25 +309,25 @@
 
         #endregion
 
-        private System.Windows.Forms.Label type;
-        private System.Windows.Forms.Label time;
-        private System.Windows.Forms.Label lineNum;
-        private System.Windows.Forms.Label machineNum;
-        private System.Windows.Forms.Button save;
-        private System.Windows.Forms.Button typeStr;
-        private System.Windows.Forms.Button t;
-        private System.Windows.Forms.Button ln1;
-        private System.Windows.Forms.Button mn1;
-        private System.Windows.Forms.Button ln2;
-        private System.Windows.Forms.Button ln3;
-        private System.Windows.Forms.Button mn2;
-        private System.Windows.Forms.Button mn3;
-        private System.Windows.Forms.Button button1;
-        public System.Windows.Forms.TextBox Num_Start;
-        private System.Windows.Forms.Button button2;
-        public System.Windows.Forms.Label Num_Current;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label typeLabel;
+        private System.Windows.Forms.Label timeLabel;
+        private System.Windows.Forms.Label lineNumLabel;
+        private System.Windows.Forms.Label machineNumLabel;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button typeButton;
+        private System.Windows.Forms.Button ln1Button;
+        private System.Windows.Forms.Button mn1Button;
+        private System.Windows.Forms.Button ln2Button;
+        private System.Windows.Forms.Button ln3Button;
+        private System.Windows.Forms.Button mn2Button;
+        private System.Windows.Forms.Button mn3Button;
+        private System.Windows.Forms.Button viewButton;
+        public System.Windows.Forms.TextBox startNumTB;
+        private System.Windows.Forms.Button decButton;
+        public System.Windows.Forms.Label currentNumLabel;
+        private System.Windows.Forms.Label startNumLabel;
+        private System.Windows.Forms.Label currentLabel;
+        private System.Windows.Forms.ComboBox timeList;
     }
 }
 
