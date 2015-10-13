@@ -80,13 +80,13 @@ namespace JqpdInit
             mn[1] = machineNumber / 10 % 10;
             mn[2] = machineNumber % 10;
 
-            ln1Button.Text = ln[0].ToString();
-            ln2Button.Text = ln[1].ToString();
-            ln3Button.Text = ln[2].ToString();
+            cbLN1.SelectedIndex = ln[0];
+            cbLN2.SelectedIndex = ln[1];
+            cbLN3.SelectedIndex = ln[2];
 
-            mn1Button.Text = mn[0].ToString();
-            mn2Button.Text = mn[1].ToString();
-            mn3Button.Text = mn[2].ToString();
+            cbMN1.SelectedIndex = mn[0];
+            cbMN2.SelectedIndex = mn[1];
+            cbMN3.SelectedIndex = mn[2];
         }
 
         public Init_Form()
@@ -208,71 +208,12 @@ namespace JqpdInit
                 b.Text = "公司台";
                 sale = 0;
             }
-        }     
-
-        private void LineNumButton_Click(object sender, EventArgs e)
-        {
-            Button b = (Button)sender;
-            int s = int.Parse(b.Text);
-            s = (s + 1) % 10;
-            for(int i = 1; i <= ln.Length; i++)
-            {
-                if(b.Name.Contains(i.ToString()))
-                {
-                    ln[i - 1] = s;
-                    break;
-                }
-            }
-            lineNumber = ln[0] * 100 + ln[1] * 10 + ln[2];
-            userSet.savedLineNum = lineNumber;
-            userSet.Save();
-            b.Text = s.ToString();
-        }
-
-        private void MachineNumButton_Click(object sender, EventArgs e)
-        {
-            int i;
-            Button b = (Button)sender;
-            int s = int.Parse(b.Text);
-            s = (s + 1) % 10;
-            for(i = 1; i <= mn.Length; i++)
-            {
-                if(b.Name.Contains((i + 1).ToString()))
-                {
-                    mn[i] = s;
-                    break;
-                }
-            }
-            b.Text = s.ToString();
-            int sum = 0;
-            for(i = 0; i < mn.Length; i++)
-            {
-                sum = 10 * sum + mn[i];
-            }
-            machineNumber = sum;
-            userSet.savedMachineNum = machineNumber;
-            userSet.Save();
-        }
+        }      
 
         private void DbViewButton_Click(object sender, EventArgs e)
         {
             DbViewForm f = new DbViewForm();
             f.ShowDialog();
-        }
-
-        private void MinusOneButton_Click(object sender, EventArgs e)
-        {
-            if(currentNum > startNum)
-            {
-                --currentNum;
-            }
-            else
-            {
-                currentNum = startNum;
-            }
-            userSet.savedCurrent = currentNum;
-            userSet.Save();
-            currentNumLabel.Text = currentNum.ToString();
         }
 
         private void StartNum_TextChanged(object sender, EventArgs e)
@@ -306,7 +247,7 @@ namespace JqpdInit
             userSet.Save();
         }
 
-        private void TxForm_Closed(object sender, FormClosedEventArgs e)
+        private void InitForm_Closed(object sender, FormClosedEventArgs e)
         {
             if(sender != this)
             {
@@ -345,6 +286,40 @@ namespace JqpdInit
                 }
             }
             codeTime = s;
+        }
+
+        private void lineNumberChanged(object sender, EventArgs e)
+        {
+            ComboBox cb = (ComboBox)sender;
+            int n = cb.SelectedIndex;
+            for(int i=1;i<=ln.Length;i++)
+            {
+                if(cb.Name.EndsWith(i.ToString()))
+                {
+                    ln[i - 1] = n;
+                    break;
+                }
+            }
+            lineNumber = ln[0]*100 + ln[1]*10 + ln[2];
+            userSet.savedLineNum = lineNumber;
+            userSet.Save();
+        }
+
+        private void machineNumberChanged(object sender, EventArgs e)
+        {
+            ComboBox cb = (ComboBox)sender;
+            int n = cb.SelectedIndex;
+            for(int i=1;i<=mn.Length;i++)
+            {
+                if(cb.Name.EndsWith(i.ToString()))
+                {
+                    mn[i - 1] = n;
+                    break;
+                }
+            }
+            machineNumber = mn[0]*100 + mn[1]*10 + mn[2];
+            userSet.savedMachineNum = machineNumber;
+            userSet.Save();
         }
     }
 }

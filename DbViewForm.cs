@@ -28,7 +28,7 @@ namespace JqpdInit
             if (totalSize > 0)
             {
                 DisplayItems();
-            } 
+            }
         }
 
         private void DisplayItems()
@@ -57,7 +57,9 @@ namespace JqpdInit
                 dataTable.Items.Add(item);
                 ++i;
             }
+            reader.Close();
         }
+
         private int GetRecordSize()
         {
             int size = 0;
@@ -71,6 +73,7 @@ namespace JqpdInit
                 {
                     size = reader.GetInt32(0);
                 }
+                reader.Close();
             }
             catch (SQLiteException sqlex)
             {
@@ -98,7 +101,6 @@ namespace JqpdInit
                 }
                 catch (SQLiteException sqlex)
                 {
-
                 }
             }
             else if (res == DialogResult.No)

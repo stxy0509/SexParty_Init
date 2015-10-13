@@ -38,16 +38,17 @@
             // 
             // dataTable
             // 
-            this.dataTable.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dataTable.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dataTable.Location = new System.Drawing.Point(5, 59);
             this.dataTable.Margin = new System.Windows.Forms.Padding(5);
             this.dataTable.Name = "dataTable";
-            this.dataTable.Size = new System.Drawing.Size(605, 532);
+            this.dataTable.Size = new System.Drawing.Size(555, 532);
             this.dataTable.TabIndex = 0;
             this.dataTable.UseCompatibleStateImageBehavior = false;
             // 
             // clearButton
             // 
+            this.clearButton.ForeColor = System.Drawing.Color.Red;
             this.clearButton.Location = new System.Drawing.Point(12, 12);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(97, 39);
@@ -58,9 +59,9 @@
             // 
             // firstPage
             // 
-            this.firstPage.Location = new System.Drawing.Point(161, 12);
+            this.firstPage.Location = new System.Drawing.Point(139, 12);
             this.firstPage.Name = "firstPage";
-            this.firstPage.Size = new System.Drawing.Size(87, 39);
+            this.firstPage.Size = new System.Drawing.Size(79, 39);
             this.firstPage.TabIndex = 2;
             this.firstPage.Text = "第一页";
             this.firstPage.UseVisualStyleBackColor = true;
@@ -68,9 +69,9 @@
             // 
             // lastPage
             // 
-            this.lastPage.Location = new System.Drawing.Point(265, 12);
+            this.lastPage.Location = new System.Drawing.Point(224, 12);
             this.lastPage.Name = "lastPage";
-            this.lastPage.Size = new System.Drawing.Size(98, 39);
+            this.lastPage.Size = new System.Drawing.Size(97, 39);
             this.lastPage.TabIndex = 3;
             this.lastPage.Text = "最后一页";
             this.lastPage.UseVisualStyleBackColor = true;
@@ -78,7 +79,7 @@
             // 
             // prevPage
             // 
-            this.prevPage.Location = new System.Drawing.Point(415, 12);
+            this.prevPage.Location = new System.Drawing.Point(374, 12);
             this.prevPage.Name = "prevPage";
             this.prevPage.Size = new System.Drawing.Size(92, 39);
             this.prevPage.TabIndex = 4;
@@ -88,7 +89,7 @@
             // 
             // nextPage
             // 
-            this.nextPage.Location = new System.Drawing.Point(522, 12);
+            this.nextPage.Location = new System.Drawing.Point(472, 12);
             this.nextPage.Name = "nextPage";
             this.nextPage.Size = new System.Drawing.Size(88, 39);
             this.nextPage.TabIndex = 5;
@@ -100,14 +101,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(622, 464);
+            this.ClientSize = new System.Drawing.Size(574, 500);
             this.Controls.Add(this.nextPage);
             this.Controls.Add(this.prevPage);
             this.Controls.Add(this.lastPage);
             this.Controls.Add(this.firstPage);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.dataTable);
-            this.Font = new System.Drawing.Font("SimSun", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "DbViewForm";
             this.Text = "保存记录";
